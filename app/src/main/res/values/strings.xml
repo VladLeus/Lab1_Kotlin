@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="custom_text">Hello from my first Mobile App</string>
+</resources>
