@@ -3,9 +3,9 @@ import 'package:lab_2/models/product.dart';
 import 'package:lab_2/pages/ItemInfo/item_info.dart';
 
 class ProductTile extends StatelessWidget {
-  Product product;
+  final Product product;
 
-  ProductTile({super.key, required this.product});
+  const ProductTile({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class ProductTile extends StatelessWidget {
                         child: IconButton(
                           icon: const Icon(Icons.article, color: Colors.white),
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => ItemInfo(product: product)));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const ItemInfo()));
                           },
                         ),
                       ))
